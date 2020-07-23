@@ -5,7 +5,7 @@ width: 960px;
 
 .row {
     display: grid;
-    grid-template: repeat(12, fr);
+    grid-template: repeat(12, 1fr);
 }
 
 .col-xs-12 {

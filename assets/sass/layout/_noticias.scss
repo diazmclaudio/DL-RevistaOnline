@@ -1,0 +1,21 @@
+.listad-noticias {
+     width: 850px;
+     float: left;
+     margin-left: 50px;
+ }
+ 
+ .noticia {
+     width: 260px;
+     display: inline-block;
+     margin: 5px;
+     cursor: pointer;
+ }
+ 
+ .cuerpo img {
+     width: 260px;
+     height: 400px;
+ }
+ 
+ .cuerpo p {
+     padding: 5px 10px;
+ }

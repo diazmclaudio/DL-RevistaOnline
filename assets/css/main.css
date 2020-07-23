@@ -1,4 +1,5 @@
 html, body {
+  margin: 0;
   font-family: monospace;
   width: 100vw;
 }
@@ -43,7 +44,7 @@ html, body {
 
 .row {
   display: grid;
-  grid-template: repeat(12, fr);
+  grid-template: repeat(12, 1fr);
 }
 
 .col-xs-12 {
@@ -307,18 +308,91 @@ html, body {
   }
 }
 .footer {
+  width: 100vw;
   margin: auto;
   text-align: center;
 }
 
 .newsletter {
   background-color: #f2f4f5;
+  width: 100vw;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .newsletter h2 {
   font-size: 24px;
+}
+
+.group input,
+.group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+.listad-noticias {
+  width: 850px;
+  float: left;
+  margin-left: 50px;
+}
+
+.noticia {
+  width: 260px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cuerpo img {
+  width: 260px;
+  height: 400px;
+}
+
+.cuerpo p {
+  padding: 5px 10px;
+}
+
+.listado-izquierdo {
+  width: 220px;
+  float: right;
+}
+
+.cabecera-listado {
+  width: 220px;
+  border-bottom: 1px solid gray;
+}
+
+.tags {
+  border-bottom: 1px solid gray;
+}
+
+.tags ul {
+  padding: 0;
+  list-style: none;
+}
+
+.tags ul li {
+  display: inline;
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+}
+
+.noticias-destacadas {
+  margin-bottom: 50px;
+}
+
+.noticias-destacadas img {
+  width: 220px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
