@@ -1,0 +1,31 @@
+.menu {
+     padding: 10px;
+     border-bottom: 1px solid gray;
+
+     .input-menu {
+          border-radius: 30px;
+      }
+ }
+
+ .nav {
+     text-align: right;
+     float: right;
+
+     li{
+          list-style: none;
+          float: right;
+          margin-left: 5px;
+     }
+
+     ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+      }
+ }
+
+ .logo {
+     display: inline;
+     font-size: 24px;
+     font-weight: bold;
+     text-transform: uppercase;
+ }

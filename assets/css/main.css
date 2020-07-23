@@ -1,18 +1,44 @@
 html, body {
-  margin: 0;
-  padding: 0;
   font-family: monospace;
+  width: 100vw;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.menu {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.menu .input-menu {
+  border-radius: 30px;
+}
+
+.nav {
+  text-align: right;
+  float: right;
+}
+.nav li {
+  list-style: none;
+  float: right;
+  margin-left: 5px;
+}
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: inline;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  margin: auto;
+  width: 960px;
 }
 
 .row {
@@ -279,6 +305,20 @@ html, body {
   .col-xl-1 {
     grid-column: span 1;
   }
+}
+.footer {
+  margin: auto;
+  text-align: center;
+}
+
+.newsletter {
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.newsletter h2 {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
