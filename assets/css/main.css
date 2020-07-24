@@ -11,26 +11,25 @@ html, body {
 .menu {
   padding: 10px;
   border-bottom: 1px solid gray;
+  width: 100vw;
 }
-.menu .input-menu {
-  border-radius: 30px;
-}
-
-.nav {
+.menu .menu__nav {
   text-align: right;
   float: right;
 }
-.nav li {
+.menu .menu__nav li {
   list-style: none;
   float: right;
   margin-left: 5px;
 }
-.nav ul li a {
+.menu .menu__nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-.logo {
+.menu .menu__nav--input-menu {
+  border-radius: 30px;
+}
+.menu .menu__logo {
   display: inline;
   font-size: 24px;
   font-weight: bold;
@@ -39,7 +38,8 @@ html, body {
 
 .container {
   margin: auto;
-  width: 960px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .row {
@@ -99,7 +99,23 @@ html, body {
   .container {
     width: 560px;
   }
-
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 576px) {
   .col-sm-12 {
     grid-column: span 12;
   }
@@ -149,10 +165,6 @@ html, body {
   }
 }
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-
   .col-md-12 {
     grid-column: span 12;
   }
@@ -202,10 +214,6 @@ html, body {
   }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-
   .col-lg-12 {
     grid-column: span 12;
   }
@@ -255,10 +263,6 @@ html, body {
   }
 }
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-
   .col-xl-12 {
     grid-column: span 12;
   }
@@ -338,61 +342,58 @@ html, body {
 }
 
 .listad-noticias {
-  width: 850px;
+  width: 59.02vw;
   float: left;
   margin-left: 50px;
 }
-
-.noticia {
+.listad-noticias .listad-noticias__noticia {
   width: 260px;
   display: inline-block;
   margin: 5px;
   cursor: pointer;
 }
-
-.cuerpo img {
-  width: 260px;
-  height: 400px;
+.listad-noticias .listad-noticias__noticia--cuerpo img {
+  width: 100%;
+  height: auto;
 }
-
-.cuerpo p {
+.listad-noticias .listad-noticias__noticia--cuerpo p {
   padding: 5px 10px;
 }
 
 .listado-izquierdo {
-  width: 220px;
+  width: 15.3vw;
   float: right;
 }
-
-.cabecera-listado {
-  width: 220px;
+.listado-izquierdo .listado-izquierdo__cabecera-listado {
+  width: 15.3vw;
   border-bottom: 1px solid gray;
 }
-
-.tags {
+.listado-izquierdo .listado-izquierdo__tags {
   border-bottom: 1px solid gray;
 }
-
-.tags ul {
+.listado-izquierdo .listado-izquierdo__tags ul {
   padding: 0;
   list-style: none;
 }
-
-.tags ul li {
+.listado-izquierdo .listado-izquierdo__tags ul li {
   display: inline;
   padding: 2px 4px;
   background-color: steelblue;
   margin-right: 1px;
   color: white;
 }
-
-.noticias-destacadas {
+.listado-izquierdo .listado-izquierdo__noticias-destacadas {
   margin-bottom: 50px;
 }
-
-.noticias-destacadas img {
+.listado-izquierdo .listado-izquierdo__noticias-destacadas img {
   width: 220px;
   height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .listado-izquierdo {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

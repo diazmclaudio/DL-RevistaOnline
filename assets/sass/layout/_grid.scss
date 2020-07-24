@@ -1,6 +1,7 @@
 .container {
-margin: auto;
-width: 960px;
+    margin: auto;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
 }
 
 .row {
@@ -49,7 +50,28 @@ width: 960px;
     .container {
         width: 560px;
     }
+}
 
+@include respond-to("md") {
+    .container {
+        width: 750px;
+    }
+}
+
+@include respond-to("lg") {
+    .container {
+        width: 970px;
+    }
+}
+
+@include respond-to("xl") {
+    .container {
+        width: 1170px;
+    }
+}
+
+@include respond-to("sm") {
+    
     .col-sm-12 {
         grid-column: span 12;
     }
@@ -89,10 +111,6 @@ width: 960px;
 }
 
 @include respond-to("md") {
-    .container {
-        width: 750px;
-    }
-
     .col-md-12 {
         grid-column: span 12;
     }
@@ -132,10 +150,6 @@ width: 960px;
 }
 
 @include respond-to("lg") {
-    .container {
-        width: 970px;
-    }
-
     .col-lg-12 {
         grid-column: span 12;
     }
@@ -175,10 +189,6 @@ width: 960px;
 }
 
 @include respond-to("xl") {
-    .container {
-        width: 1170px;
-    }
-
     .col-xl-12 {
         grid-column: span 12;
     }

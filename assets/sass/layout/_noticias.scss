@@ -1,21 +1,22 @@
 .listad-noticias {
-     width: 850px;
-     float: left;
-     margin-left: 50px;
- }
- 
- .noticia {
-     width: 260px;
-     display: inline-block;
-     margin: 5px;
-     cursor: pointer;
- }
- 
- .cuerpo img {
-     width: 260px;
-     height: 400px;
- }
- 
- .cuerpo p {
-     padding: 5px 10px;
- }
+    width: 59.02vw;
+    float: left;
+    margin-left: 50px;
+
+    .listad-noticias__noticia {
+        width: 260px;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .listad-noticias__noticia--cuerpo {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        p {
+            padding: 5px 10px;
+        }
+    }
+}
